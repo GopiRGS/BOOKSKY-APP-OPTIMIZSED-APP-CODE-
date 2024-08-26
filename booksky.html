@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="bookcontainer">
+            <h1>My Family is Always Create</h1>
+            <h5>Dr. G. Gopi Krishnan</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt aperiam neque perferendis soluta! Perferendis quia, aliquam architecto nesciunt, a culpa magnam excepturi unde, cumque odio ea officia ratione qui.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae aliquam amet sapiente, fugiat autem eius temporibus ex, sed, aperiam adipisci nisi velit quasi quod voluptatibus odit commodi suscipit qui.
+            </p>
+            <button type="button" onclick="deleteBook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popupoverlay" style="display: none;"></div>
+    <div class="popup-box" style="display: none;">
+        <h2>Add Book</h2>
+        <form id="add-book-form">
+            <input type="text" placeholder="Book Title" id="book-title-input" required>
+            <input type="text" placeholder="Book Author" id="book-author-input" required>
+            <textarea placeholder="Short Description" id="book-description-input" required></textarea>
+            <button type="button" id="add-book">ADD</button>
+            <button type="button" id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
